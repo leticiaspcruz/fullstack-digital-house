@@ -1,0 +1,50 @@
+<!--Criar um formulário de login com validação --> 
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiro Formulário da Letícia</title>
+</head>
+<body>
+  <form action="https://submit-form.com/fLJuHzvt" method="POST">
+    
+    <br><br>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email"/>
+
+    <br><br>
+
+    <label for="senha">Senha: <i>(Utilize letras maíusculas e minúsculas, mínimo de 8 caracteres)</i></label><br>
+    <input
+      type="password"
+      name="senha"
+      id="senha"
+      required
+      minlength="8"
+      size="8"
+      pattern= "Senha123"
+      placeholder="Crie sua senha aqui"
+    >
+    <br><br>
+    
+      <label for="senha">Confirme sua senha:</label><br>
+      <input
+        type="password"
+        name="senha"
+        id="senha"
+        required
+        minlength="8"
+        size="8"
+        pattern= "Senha123"
+        placeholder="Confirmação de senha"
+      >
+      <br><br>  
+   
+    <button type="submit">Enviar!</button>
+  </form>
+
+</body>
+</html>
