@@ -5,13 +5,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href= "style.css" rel= "stylesheet">
   <title>Primeiro Formulário da Letícia</title>
 </head>
 <body>
+  <div class= "main-container">
   <form action="https://submit-form.com/fLJuHzvt" method="POST">
-    
     <br><br>
-
+  <div class= "form">
+    <h1>Preencha o formulário</h1>
     <label for="email">E-mail:</label>
     <input type="email" id="email" name="email"/>
 
@@ -20,11 +22,11 @@
     <label for="senha">Senha: <i>(Utilize letras maíusculas, minúsculas e números, mínimo de 8 caracteres)</i></label><br>
     <input
       type="password"
-      name="senha"
-      id="senha"
+      name="senhaForte"
+      id="senhaForte"
       required
       minlength="8"
-      pattern= "Senha123"
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
       placeholder="Crie sua senha aqui"
     >
     <br><br>
@@ -36,13 +38,18 @@
         id="senha"
         required
         minlength="8"
-        pattern= "Senha123"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
         placeholder="Confirmação de senha"
       >
       <br><br>  
    
     <button type="submit">Enviar!</button>
+    <br><br>  
+    </div>
+  </div>
   </form>
+
+  <script src="validacaoSenha.js"></script>
 
 </body>
 </html>
